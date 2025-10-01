@@ -10,6 +10,6 @@ Chạy lệnh flutter run để build và chạy ứng dụng.
 Sử dụng flutter build apk hoặc flutter build windows để build cho từng nền tảng.
 
 => Giao diện khi code 
-![alt text]({35DE788F-AE3B-4734-A16E-18B58761D009}.png)
+![alt text](Giaodiencode.png)
 => Giao diện output
 ![alt text](image.png)
