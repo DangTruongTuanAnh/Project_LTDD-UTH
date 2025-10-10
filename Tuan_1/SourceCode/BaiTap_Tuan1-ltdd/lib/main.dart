@@ -26,7 +26,6 @@ class ProfileScreen extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            // Nội dung chính căn giữa màn hình
             Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -64,7 +63,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            // Icon back (trái trên)
+            // Icon back
             Positioned(
               top: 16,
               left: 16,
@@ -83,7 +82,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            // Icon edit (phải trên)
+            // Icon edit
             Positioned(
               top: 16,
               right: 16,
