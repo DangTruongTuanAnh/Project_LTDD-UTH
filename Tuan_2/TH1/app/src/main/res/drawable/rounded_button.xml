@@ -2,7 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <!-- Màu nền -->
-    <solid android:color="#F44336" /> <!-- đỏ đậm (có thể thay đổi) -->
+    <solid android:color="#F44336" /> <!-- đỏ đậm -->
     <!-- Bo góc -->
     <corners android:radius="25dp" />
     <!-- Viền mảnh -->

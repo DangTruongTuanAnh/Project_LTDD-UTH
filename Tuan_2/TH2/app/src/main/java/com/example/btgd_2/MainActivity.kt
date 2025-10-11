@@ -17,13 +17,28 @@ class MainActivity : AppCompatActivity() {
         val tvResult = findViewById<TextView>(R.id.tvResult)
 
         btnCheck.setOnClickListener {
-            val name = edtName.text.toString()
-            val age = edtAge.text.toString()
-            if (name.isBlank() || age.isBlank()) {
+            val name = edtName.text.toString().trim()
+            val ageText = edtAge.text.toString().trim()
+
+            if (name.isEmpty() || ageText.isEmpty()) {
                 tvResult.text = "Vui lòng nhập đầy đủ thông tin!"
-            } else {
-                tvResult.text = "Xin chào $name, bạn $age tuổi!"
+                return@setOnClickListener
             }
+
+            val age = ageText.toIntOrNull()
+            if (age == null || age < 0) {
+                tvResult.text = "Tuổi không hợp lệ!"
+                return@setOnClickListener
+            }
+
+            val category = when {
+                age > 65 -> "Người già"
+                age in 6..65 -> "Người lớn"
+                age in 2..5 -> "Trẻ em"
+                else -> "Em bé"
+            }
+
+            tvResult.text = "Xin chào $name, bạn $age tuổi.\n $category"
         }
     }
 }
