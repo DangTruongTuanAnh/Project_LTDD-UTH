@@ -46,15 +46,9 @@ fun ComponentsListScreen(navController: NavHostController) {
         SectionTitle("Layout")
         ComponentCard(title = "Column", desc = "Arranges elements vertically", navController = navController)
         ComponentCard(title = "Row", desc = "Arranges elements horizontally", navController = navController)
-
-        // Mục tự tìm hiểu
-        Spacer(modifier = Modifier.height(8.dp))
-        ComponentCard(
-            title = "Tự tìm hiểu",
-            desc = "Tìm ra tất cả các thành phần UI Cơ bản",
-            backgroundColor = Color(0xFFFFCDD2),
-            navController = navController
-        )
+        SectionTitle("Column1/Cloumnlazy")
+        ComponentCard(title = "Column1", desc = "Arranges elements vertically", navController = navController)
+        ComponentCard(title = "Cloumnlazy", desc = "Arranges elements horizontally", navController = navController)
     }
 }
 
@@ -92,6 +86,8 @@ fun ComponentCard(
                     "PasswordField" -> navController.navigate("passwordFieldScreen")
                     "Row" -> navController.navigate("rowLayoutScreen")
                     "Column" -> navController.navigate("columnLayoutScreen")
+                    "Cloumnlazy" -> navController.navigate("componentsNew")
+                    "Column1" -> navController.navigate("column1")
                 }
             }
     ) {

@@ -39,8 +39,8 @@ class MainActivity : ComponentActivity() {
                     composable("textFieldDetailScreen") { TextFieldDetailScreen(navController) }
                     composable("passwordFieldScreen") { PasswordFieldScreen(navController) }
                     composable("rowLayoutScreen") { RowLayoutScreen(navController) }
-                    composable("columnLayoutScreen") { ColumnLayoutScreen(navController) }
-
+                    composable("componentsNew") { ComponentsNew(navController) }
+                    composable("column1") { ColumnScreen(navController) }
                 }
             }
         }
