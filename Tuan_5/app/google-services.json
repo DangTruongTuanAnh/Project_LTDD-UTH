@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "296848304195",
+    "project_id": "btfirebase-9a26f",
+    "storage_bucket": "btfirebase-9a26f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296848304195:android:7ec1feddb083291f7fccf6",
+        "android_client_info": {
+          "package_name": "com.example.btfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296848304195-bvip8249qd11b1m7v8vp3977ku6c8v9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btfirebase",
+            "certificate_hash": "344024a5c4242d637256e4636bc475e8e3c38182"
+          }
+        },
+        {
+          "client_id": "296848304195-cbcjrio3esbn4h0gooqpmgjk3n7n9lmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKlKtw_spxc75f8FHy9FDO9ccbqY4zzYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296848304195-cbcjrio3esbn4h0gooqpmgjk3n7n9lmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -42,15 +42,12 @@ class LibraryViewModel : ViewModel() {
     fun removeBookFromCurrentStudent(book: Book) {
         val student = _currentStudent.value ?: return
 
-        // Tạo bản sao mới của sinh viên sau khi xóa sách khỏi danh sách mượn
         val updatedStudent = student.copy(
             borrowedBooks = student.borrowedBooks.filterNot { it.id == book.id }
         )
 
-        // Cập nhật repository
         repo.updateStudent(updatedStudent)
 
-        // Cập nhật lại danh sách sinh viên và sinh viên hiện tại trong ViewModel
         _students.value = _students.value.map {
             if (it.id == updatedStudent.id) updatedStudent else it
         }

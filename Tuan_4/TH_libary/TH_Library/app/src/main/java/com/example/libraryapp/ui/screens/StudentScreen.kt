@@ -62,7 +62,6 @@ fun StudentCard(
         ) {
             Text("Tên: ${student.name}", style = MaterialTheme.typography.bodyLarge)
 
-            // ✅ ĐÃ BỎ phần hiển thị sách đang mượn
 
             Spacer(modifier = Modifier.height(8.dp))
             Button(
